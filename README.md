@@ -2,7 +2,7 @@
 
 # How-to compile it:
 
-## twrp 12.1 Manifest
+## twrp-14 Manifest
     repo init --depth=1 -u https://github.com/shekhawat2/platform_manifest_twrp_aosp.git -b twrp-14
 ## Sync
     repo sync
