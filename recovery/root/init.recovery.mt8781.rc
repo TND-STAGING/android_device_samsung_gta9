@@ -77,7 +77,6 @@ service vaultkeeper_hal /vendor/bin/vendor.samsung.hardware.security.vaultkeeper
     seclabel u:r:recovery:s0
 
 service sem_hal /vendor/bin/hw/vendor.samsung.hardware.security.sem@1.0-service
-    interface vendor.samsung.hardware.security.sem@1.0::ISehSem default
     class hal
     user root
     group root
