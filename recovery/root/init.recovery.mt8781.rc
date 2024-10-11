@@ -37,6 +37,9 @@ on post-fs-data
     mkdir /efs/gatekeeper 0775 root root
     restorecon -R /efs/gatekeeper
 
+# Module Loading
+    exec - root -- /vendor/bin/init.insmod.sh
+
 on early-boot
     mkdir /efs/sec_efs/esek 0775 root root
 
@@ -98,9 +101,4 @@ service gatekeeperd /system/bin/gatekeeperd /data/misc/gatekeeper
     task_profiles ServiceCapacityLow
     seclabel u:r:recovery:s0
 
-on post-fs-data
 
-
-# Module Loading
-on post-fs-data
-    exec - root -- /vendor/bin/init.insmod.sh
