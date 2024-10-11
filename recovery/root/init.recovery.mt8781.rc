@@ -6,6 +6,7 @@ on init
     setprop sys.usb.configfs 1
     setprop sys.usb.controller "musb-hdrc"
     setprop sys.usb.ffs.aio_compat 0
+    setprop logd.ready true
 
     start vendor.keymint-default
     start vendor.gatekeeper-1-0
