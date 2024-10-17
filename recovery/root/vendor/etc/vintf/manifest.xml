@@ -263,6 +263,26 @@
         <fqname>@1.0::IThermal/default</fqname>
         <fqname>@2.0::IThermal/default</fqname>
     </hal>
+        <hal format="hidl" optional="false">
+        <name>android.hidl.allocator</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+    </hal>
+    <hal format="hidl" optional="false">
+        <name>android.hidl.manager</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+    </hal>
+    <hal format="hidl" optional="false">
+        <name>android.hidl.memory</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+    </hal>
+    <hal format="hidl" optional="false">
+        <name>android.hidl.token</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+    </hal>
     <hal format="hidl">
         <name>vendor.mediatek.hardware.aee</name>
         <transport>hwbinder</transport>
