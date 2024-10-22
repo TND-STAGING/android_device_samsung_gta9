@@ -9,10 +9,11 @@ on post-fs-data
 # insthk
 service insthk /system/bin/insthk
     class core
-    user system
-    group system
+    user root
+    group root
     disabled
     oneshot
+    seclabel u:r:recovery:s0
 
 on property:sys.tzdaemon=Ready
     start insthk
