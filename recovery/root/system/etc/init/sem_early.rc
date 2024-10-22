@@ -1,0 +1,12 @@
+# sem_daemon
+service sem_daemon /system/bin/sem_daemon
+    class core
+    user system
+    group system nfc
+    oneshot
+    disabled
+
+on early-boot
+    mkdir /efs/sec_efs/esek 0775 system system
+    start sem_daemon
+
