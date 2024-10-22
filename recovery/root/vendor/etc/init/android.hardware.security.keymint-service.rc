@@ -1,7 +1,8 @@
 service vendor.keymint-default /vendor/bin/hw/android.hardware.security.keymint-service
     class early_hal
-    user system
-    group system drmrpc
+    user root
+    group root drmrpc
+    seclabel u:r:recovery:s0
 
 on post-fs
     mkdir /mnt/vendor/efs/DAK 0775 system system
