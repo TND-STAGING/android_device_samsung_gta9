@@ -163,7 +163,7 @@ TW_BACKUP_EXCLUSIONS := /data/fonts
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
 TW_NO_CPU_TEMP := true
-TW_DEVICE_VERSION := TND_B003.2
+TW_DEVICE_VERSION := TND-14-C001
 
 # Battery correct percentage
 TW_CUSTOM_BATTERY_PATH := /sys/class/power_supply/battery/capacity
