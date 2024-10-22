@@ -16,12 +16,14 @@ on post-fs-data
 
 service tz_service /vendor/bin/tzdaemon
     class core
-    user system
-    group system readproc
+    user root
+    group root readproc
     disabled
+    seclabel u:r:recovery:s0
 
 service tzts_service /vendor/bin/tzts_daemon
     class core
-    user system
-    group system
+    user root
+    group root
     disabled
+    seclabel u:r:recovery:s0
