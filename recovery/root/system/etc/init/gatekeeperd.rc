@@ -1,8 +1,9 @@
 service gatekeeperd /system/bin/gatekeeperd /data/misc/gatekeeper
     class late_start
-    user system
-    group system 5678 5666
+    user root
+    group root 5678 5666
     task_profiles ServiceCapacityLow
+    seclabel u:r:recovery:s0
 
 on post-fs-data
     mkdir /efs/gatekeeper 0775 system system
